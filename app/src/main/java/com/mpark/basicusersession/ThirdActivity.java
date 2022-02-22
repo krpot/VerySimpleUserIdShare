@@ -25,10 +25,10 @@ public class ThirdActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        setupLoggedInUser();
+        bindLoggedInUser();
     }
 
-    private void setupLoggedInUser() {
+    private void bindLoggedInUser() {
         String loggedInUserId = sessionStore.getLoggedInUserId();
         boolean isUserLoggedIn = loggedInUserId != null && !loggedInUserId.isEmpty();
         String userId = isUserLoggedIn ? loggedInUserId : getString(R.string.non_login_status_text);

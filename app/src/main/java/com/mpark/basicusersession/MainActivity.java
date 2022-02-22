@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        setupLoggedInUser();
+        bindLoggedInUser();
     }
 
-    private void setupLoggedInUser() {
+    private void bindLoggedInUser() {
         String loggedInUserId = sessionStore.getLoggedInUserId();
         boolean isUserLoggedIn = loggedInUserId != null && !loggedInUserId.isEmpty();
         String sessionText = isUserLoggedIn ? loggedInUserId : getString(R.string.non_login_status_text);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         logoutButton = findViewById(R.id.logout_button);
         logoutButton.setOnClickListener(v -> {
             sessionStore.setLoggedInUserId(null);
-            setupLoggedInUser();
+            bindLoggedInUser();
         });
 
         nextButton = findViewById(R.id.go_to_next_button);
