@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private void setupLoggedInUser() {
         String loggedInUserId = sessionStore.getLoggedInUserId();
         boolean isUserLoggedIn = loggedInUserId != null && !loggedInUserId.isEmpty();
-        String userId = isUserLoggedIn ? loggedInUserId : getString(R.string.non_login_status_text);
-        userIdText.setText(userId);
+        String sessionText = isUserLoggedIn ? loggedInUserId : getString(R.string.non_login_status_text);
+        userIdText.setText(sessionText);
 
         loginButton.setVisibility(isUserLoggedIn ? View.GONE : View.VISIBLE);
         logoutButton.setVisibility(isUserLoggedIn ? View.VISIBLE : View.GONE);
