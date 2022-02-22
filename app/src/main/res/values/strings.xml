@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BasicUserSession</string>
+    <string name="close">Close</string>
+
+    <string name="non_login_status_text">Not logged in yet.</string>
+
+    <string name="main_to_login_activity_button_caption">Login</string>
+    <string name="main_to_second_activity_button_caption">Go to SecondActivity</string>
+
+    <string name="second_title">Second</string>
+    <string name="second_to_third_button_caption">Go to ThirdActivity</string>
+
+    <string name="third_title">Third</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="logout">Logout</string>
+</resources>
